@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  
+
+  <title>M i T::음악 서비스</title>
+    <link rel="stylesheet" type="text/css" href="MiTcss.css"> 
+
+<style>
+  p {
+
+    color: #727272;
+
+    font-size: 12px;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+a:hover {
+
+    text-decoration: underline;
+
+}
+
+.nav_bar {
+
+
+
+    height: 50px;
+
+    float: right;
+
+}
+.nav_text_box {
+
+    height: 30px;
+
+    display: inline-block;
+
+    position: relative;
+
+    padding-right: 5px;
+
+}
+
+.nav_icon_box1 {
+
+    width: 22px;
+
+    height: 22px;
+
+    display: inline-block;
+
+    position: relative;
+
+    top: 5px;
+
+    margin-right: 5px;
+
+    margin-left: 5px;
+
+    background-image : url("https://docs.google.com/drawings/d/1Yy0vs1igTFZcacNLBC5dBQUfxESKh8mp34sBzoTWLIU/pub?w=22&amp;h=22") 
+
+}
+
+.nav_icon_box1:hover {
+
+    background-image : url("https://docs.google.com/drawings/d/1JeoXOogCbgGedVEuGQq-ONQ3BrSGJyMIVqfpYoO5sok/pub?w=22&amp;h=22")
+
+}
+
+.nav_icon_box2 {
+
+    width: 24px;
+
+    height: 24px;
+
+    display: inline-block;
+
+    position: relative;
+
+    top: 6px;
+
+    margin-right: 5px;
+
+    margin-left: 5px;
+
+    background-image: url("https://docs.google.com/drawings/d/1hcAh0ZXgyL4HLhzjyGJ1L2PkLkF60LZlfhxQaCCahfc/pub?w=24&amp;h=24")
+
+}
+
+.nav_icon_box2:hover {
+
+    background-image: url("https://docs.google.com/drawings/d/11TNkzsSOU5mL9VVzHRakJ8QB1nwngpuNOWNaRL9Q6TE/pub?w=24&amp;h=24")
+
+}
+
+.nav_profile_box {
+
+    width: 36px;
+
+    height: 36px;
+
+    display: inline-block;
+
+    position: relative;
+
+    top: 12px;
+
+    margin-right: 5px;
+
+    margin-left: 5px;
+
+    background-image: url("https://docs.google.com/drawings/d/1wfEGIsAyr9QERbviZWfUBN0Hlm4C2-v1QM3wXojxthk/pub?w=36&amp;h=36")
+
+}
+ #logo {
+  margin-left:  500px;
+  margin-top : 25px;
+ }
+.centered { width: 400px; position: absolute; left: 40% ;margin-left: -200px; }
+
+
+ input : -ms-input-placrholder {color:#a8a8a8;}
+ input:: -webkit-input-placeholder {color: #a8a8a8;}
+ input:: -moz-placeholder {color: #a8a8a8;}
+  .search{
+    height: 40px;
+    width: 400px;
+    border: 1px solid #1b5ac2;
+    background: #ffffff;
+  }
+  .intext{
+    font-style: 16px;
+    width :325px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    float: left;
+  }
+  .busearch{
+    width: 50px;
+    height: 100%;
+    border : 0px;
+    background: #1b5ac2;
+    outline: none;
+    float:right;
+    color : #ffffff;
+  }
+
+  #menubar{
+      background: white;
+    }
+   #menubar ul{/* 여백과 패딩 모두 0*/
+    margin: 0;
+    padding: 0;
+    width:567px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭*/
+    }
+   #menubar ul li{
+    display: inline-block; /* 새 줄로 넘어 가지 않게*/
+    list-style-type: none; /* 마커 삭제 */
+    padding: 10px 15px; /* top=bottom=0, left=right=15px */
+   }
+   #menubar ul li a{
+    color : black;
+    text-decoration: none; /* 링크 보이지 않게*/
+    font-weight : bold;
+   }
+   #menubar ul li a:hover{
+    color:violet;  /* 마우스 올라 갈때 색*/
+   }
+  
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "돋움",Dotum,"맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    letter-spacing: 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+    background:  #fff;
+    -webkit-text-size-adjust: none;
+}
+.css3-tab {
+  list-style: none;
+  margin: 0 auto 40px;
+  padding: 38px 0 0 0;
+  position: relative;
+  width: 90%;
+}
+.css3-tab input[type='radio'] {
+  display: none;
+}
+.css3-tab .css3-tab-nav {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.css3-tab .css3-tab-nav label {
+  display: table-cell;
+  background-color: #666666;
+  color: #FFFFFF;
+  padding: 15px;
+  text-align: center;
+  transition: all .3s ease 0s;
+}
+.css3-tab .css3-tab-nav label:hover {
+  cursor: pointer;
+  background: white;
+  color: #666666;
+  transition: all .3s ease 0s;
+}
+@media (max-width: 692px) {
+  .css3-tab .css3-tab-nav {
+    display: block;
+    margin: 0 0 20px;
+  }
+  .css3-tab .css3-tab-nav label {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+  }
+}
+.css3-tab .css3-tab-content {
+  overflow: hidden;
+  padding: 25px;
+  display: none;
+  background: #FFF;
+  clear: left;
+  box-sizing: border-box;
+}
+.css3-tab input[id='tabOne']:checked ~ .css3-tab-nav label[for='tabOne'] {
+  background: #b6ff00;
+  color: #666666;
+  cursor: default;
+}
+.css3-tab input[id='tabOne']:checked ~ div.tab-one {
+  display: block;
+  border-top: solid 3px #b6ff00;
+}
+.css3-tab input[id='tabTwo']:checked ~ .css3-tab-nav label[for='tabTwo'] {
+  background: red;
+  color: white;
+  cursor: default;
+}
+.css3-tab input[id='tabTwo']:checked ~ div.tab-two {
+  display: block;
+  border-top: solid 3px red;
+}
+.css3-tab input[id='addNew']:checked ~ .css3-tab-nav label[for='addNew'] {
+  background: red;
+  color: white;
+  cursor: default;
+}
+.css3-tab input[id='addNew']:checked ~ div.add-new {
+  display: block;
+  border-top: solid 3px red;
+}
+
+</style>
+  <body>
+    <div id="header">
+
+            <div class="nav_bar">
+
+        
+
+                <div class="nav_text_box">
+
+                    <a href="index/login.html"> <p>로그인</p></a>
+
+                </div>
+
+                <div class="nav_text_box">
+
+                    <a href="#"><p>회원가입</p></a>
+
+                </div>
+
+                <div class="nav_icon_box1"></div>
+
+                <div class="nav_icon_box2"></div>
+
+              
+
+            </div>
+
+        </div>
+
+
+
+    <div id="body" class="main">
+    <div id="body_wrap" class="pr_none"> 
+      <div id="gnb" class="clfix" >
+        
+        
+       <a href="C:\Users\LG\Desktop\음악 관련\MiT_IoTfestival\MiTMiT.html" title="M i T 로고 - 홈으로 이동"><img id = "logo" width="142" height="99" src="media/Music IT.jpg" alt="M i T 로고 이미지"></a>
+      </div>
+  
+
+  <div class="search" style="position: absolute; left:750px; top:55px;">
+    <input type = "text" placeholder= "검색어 입력" class ="intext">
+    <button class="busearch">검색<button>
+    </div>
+
+ 
+<div class ="centered">
+    <nav id="menubar">
+      <ul>
+         <li><a href= "#"></a></li>
+          <li><a href= "#"></a></li>
+           <li><a href= "#"></a></li>
+           <li><a href= "#"></a></li>
+        <li class = "nth2"><a href= "file:///C:/Users/LG/Desktop/%EC%9D%8C%EC%95%85%20%EA%B4%80%EB%A0%A8/MiT_IoTfestival/index/new.html">최신</a></li>
+         <li><a href= "#"></a></li>
+          
+          
+         
+        <li class = "nth3"><a href= "file:///C:/Users/LG/Desktop/%EC%9D%8C%EC%95%85%20%EA%B4%80%EB%A0%A8/MiT_IoTfestival/index/genre.html">장르</a></li>
+         <li><a href= "#"></a></li>
+          
+          
+          
+        <li class = "nth4"><a href= "file:///C:/Users/LG/Desktop/%EC%9D%8C%EC%95%85%20%EA%B4%80%EB%A0%A8/MiT_IoTfestival/index/musicrecommendation.html">음악뽑기</a></li>
+         <li><a href= "#"></a></li>
+         
+           
+       
+        <li class = "nth5"><a href= "file:///C:/Users/LG/Desktop/%EC%9D%8C%EC%95%85%20%EA%B4%80%EB%A0%A8/MiT_IoTfestival/index/mood.html">분위기</a></li>
+    
+           
+      </ul>
+
+    </nav>
+<div class = "body" style = "position: relative; left :200px; top :50px;">
+<!-- Pure CSS Menu -->
+<div class='css3-tab'>
+    <input type='radio' name='a' id='tabOne' tabindex="1">
+    <input type='radio' name='a' id='tabTwo' tabindex="2" checked>
+    <input type='radio' name='a' id='addNew' tabindex="3">
+
+    <div class="css3-tab-nav">
+        <label for='tabOne'>Music News</label>
+        <label for='tabTwo'>Artist News</label>
+        <label for='addNew'>More</label>
+    </div>
+
+    <div class='css3-tab-content tab-one'>
+        <!-- start slipsum code -->
+        <h1>신곡</h1> 
+        <br>
+         <img src="media/song.jpg" width="100" height="100" >
+         <br>
+         '잘 다녀와요', '퇴근시간’을 잇는 당신의 하루 끝,
+          숨은 위로를 건넬 치즈의 신곡 [잘 자, 안녕]
+        <h2>앨범 소개</h2> 
+        <br>
+         어제, 어쩌면 몇 해 전과도 별로 달라지지 않은 것만 같은 매일의 일상 속
+      누군가 건넨 보통의 인사 한 번으로 꽤나 괜찮은 하루가 되기도 하는 것처럼
+      인사는 가장 쉽게 건넬 수 있는 일상의 사소한 선물이며
+      선물을 나눌 단 한 사람이 곁에 있다는 것만으로도 나의 오늘은 분명히 어제와는 다른 하루가  될 것이다.
+        <h2>작가의 말</h2> 
+        <br>
+         이 노래를 듣고 있는 모두에게,
+     당신의 하루 끝 이 자리에서 늘 기다리고 있겠다고 말하고 싶네요.
+     이 노래를 듣다 문득 우리가 그리워진다면 더할 나위 없겠습니다.
+     </div>
+
+    <div class='css3-tab-content tab-two'>
+        <!-- start slipsum code -->
+        <h1>새로운 아티스트</h1>
+        <br> 
+        <img src="media/cheese.jpg" width="100" height="100">
+        <br>
+        <h2>소개</h2> 
+        <br>
+        출생 : 1991년 8월 19일
+소속사 : 매직스트로베리사운드 
+데뷔 : 2011년 디지털 싱글 앨범 [      나홀로 집에 (home)     ]
+사이트 : 공식홈페이지, 인스타그램, 트위터, 페이스북, 유튜브, V LIVE
+<br>
+        <h2>작가의 말</h2> 
+        <br>
+         이 노래를 듣고 있는 모두에게,
+     당신의 하루 끝 이 자리에서 늘 기다리고 있겠다고 말하고 싶네요.
+     이 노래를 듣다 문득 우리가 그리워진다면 더할 나위 없겠습니다.
+    </div>
+
+    <div class='css3-tab-content add-new'>
+        <!-- start slipsum code -->
+        <h1>음악 산업</h1> 
+        <br>
+음악 산업(音樂産業)이란 음악을 생산 · 유통하는 산업적 개념인데, 음악을 요소로 하는 상품, 서비스 등을 대량 생산 · 유통시키며 이윤 창출을 목적으로 이루어지는 기업 활동을 말한다. 산업이라는 용어가 생산 활동 전반을 지칭하고는 있지만, 주로 생산 활동의 각 구조와 유통 활동까지를 포함하는 개념으로 사용된다. 즉, 음악이 사고파는 거래의 대상이 되고 경제활동의 주 요소가 된다.
+
+음악 산업은 아티스트라는 생산자와 관객이라는 수용자로 구성되어 있으며, 이를 연결하는 다양한 전문가들과 유통 과정이 포함된다. 음악의 창작, 음반의 제작 · 활용 · 유통 · 보급 · 수출입 등에 관련된 영업 및 대중음악 공연을 지칭하며, 이에 따라 음반 · 공연 · 출판 · 매니지먼트 · 영상물 활용 등 아티스트와 음원을 사용해 가치를 창출하는 모든 산업을 일컫는다. 그리고 음악 산업은 유행에 민감하게 반응하기 때문에 생명력이 짧다는 특징이 있다.
+
+
+
+        <h2>관련기사</h2> 
+        <br>
+ <a href="https://imnews.imbc.com/replay/2020/nwtoday/article/5983004_32531.html">MBC</a><br>
+ <a href="http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202011200197&t=NNv">한국경제TV</a><br>
+ <a href="http://www.hani.co.kr/arti/animalpeople/human_animal/959777.html">한겨레</a><br>
+ <a href="http://news.kmib.co.kr/article/view.asp?arcid=0014595881&code=61121111&cp=nv">국민일보</a>
+      
+    </div>
+</div>
+  
+</div></div>
+</div></li>
+  </body>
+ 
+
+
+
